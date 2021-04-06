@@ -64,3 +64,18 @@ account = Account.new
 account.deposit(10) 
 account.withdraw(5) 
 account.balance = 5  
+
+### User Story 3:
+
+As a customer  
+So that I can keep track of my money  
+I would like to be able to print an account statement  
+
+|Example Output|
+```
+date || credit || debit || balance
+14/01/2012 || || 20.00 || 40.00
+13/01/2012 || 50.00 || || 60.00
+10/01/2012 || 10.00 || || 10.00
+```
+
