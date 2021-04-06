@@ -42,9 +42,25 @@ I would like to be able to make a deposit
 
 **Class:** Account  
 **Initialize:** Balance = 0  
-**Method:** Deposit  
+**Method:** deposit(amount)  
 
 *Test In IRB:*  
 account = Account.new  
 account.deposit(10)  
 account.balance = 10  
+
+## User Story 2:
+
+As a customer  
+So that I can access my money  
+I would like to be abke to make a withdrawal  
+
+**Class:** Account  
+**Initialize:** Balance = 0  
+**Method:** withdraw(amount)  
+
+*Test In IRB:*  
+account = Account.new  
+account.deposit(10) 
+account.withdraw(5) 
+account.balance = 5  

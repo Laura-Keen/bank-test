@@ -9,5 +9,13 @@ describe Account do
     end
   end
 
+  describe '#withdraw' do
+    it 'Allows the user to make a withdrawal' do
+      subject.deposit(10)
+      subject.withdraw(5)
+      expect(subject.balance).to eq 5
+    end
+  end
+
 end
 
