@@ -33,3 +33,18 @@ I would like my data to be stored in memory
 
 *This does not require a database*
 
+
+## User Story 1:
+
+As a customer  
+So that I can keep my money safe  
+I would like to be able to make a deposit  
+
+**Class:** Account
+**Initialize:** Balance = 0
+**Method:** Deposit
+
+*Test In IRB:*
+account = Account.new
+account.deposit(10)
+account.balance = 10
