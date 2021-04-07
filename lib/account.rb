@@ -1,21 +1,24 @@
 class Account
   
-  attr_reader :balance, :credit
+  attr_reader :balance, :statement
 
   def initialize
     @balance = 0
-    @credit = []
-    @debit = []
+    @statement = []
   end
 
   def deposit(amount)
-    @credit << amount 
-    @balance += amount
+    @balance += amount 
+    @statement << {date: Time.now.strftime("%d/%m/%y"), credit: amount, debit: '', balance: @balance}
   end
 
   def withdraw(amount)
-    @debit << amount
     @balance -= amount
+    @statement << {date: Time.now.strftime("%d/%m/%y"), credit: '', debit: amount, balance: @balance}
+  end
+
+  def statement
+    puts Hirb::Helpers::Table.render(@statement)
   end
 
 end

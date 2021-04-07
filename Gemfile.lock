@@ -44,7 +44,7 @@ PLATFORMS
 DEPENDENCIES
   hirb (~> 0.7.3)
   rspec
-  rubocop
+  rubocop (~> 1.12, >= 1.12.1)
 
 BUNDLED WITH
    2.2.4

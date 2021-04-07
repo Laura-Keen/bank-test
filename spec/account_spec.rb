@@ -16,5 +16,6 @@ describe Account do
       expect(subject.balance).to eq 5
     end
   end
+  
 end
 
