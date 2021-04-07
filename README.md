@@ -25,6 +25,9 @@ date || credit || debit || balance
 13/01/2012 || 2000.00 || || 3000.00
 10/01/2012 || 1000.00 || || 1000.00
 ```
+## Planning
+
+If you would like to know more about how I planned this app, please refer to the plannning.md document
 
 ## Installation
 
@@ -34,15 +37,15 @@ To use this app, clone this repository to your local computer and run the follow
 
 This should install all of the gems in the gemfile - the app should then be ready to use
 
-## How To Use
+## How To Use
 
 ### Running Tests
 
-This app uses Rspec as the testing framework, to run the tests, enter inti the command line:
+This app uses Rspec as the testing framework, to run the tests, enter into the command line:
 
     rspec
 
-### Using App In IRB
+### Using App In IRB
 
 The best way to use this app is in a REPL. Whilst developing this I used IRB to run this app:
 
