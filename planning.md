@@ -5,7 +5,7 @@
   My approach to this app was to come up with the user stories first in order to understand the way that a customer would use the program and what they would use it for.
   Next, I planned out what classes and methods would be needed for each user story one at a time and wrote the tests and then the code.
   
-  At first I struggled with getting my head around the third user story as I couldn't figure out the best way to gather all of the information in one place ready to be printed out as one.
+  At first I struggled with getting my head around the third user story as I couldn't figure out the best way to gather all of the information in one place ready to be printed out as one. I ended up using hashes and the gem 'hirb' to get the table format.
 
 ## Code Structure 
   My code is all contained within one account class with one method for each of the three user stories. I think that I could potentially split the class into two and have a separate one for the bank statement but I tried this and found it difficult to pull the information needed from the original account class into the second statement class.
@@ -34,15 +34,6 @@ I would like to be able to print an account statement
 - date
 - amount
 - balance
-
-### User Story 4:
-
-As a customer  
-So that I can know my financial history  
-I would like my data to be stored in memory  
-
-*This does not require a database*
-
 
 ## User Story 1:
 
