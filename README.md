@@ -26,7 +26,40 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 ```
 
-### Self-assessment
+## Installation
 
-Once you have completed the challenge and feel happy with your solution, here's a form to help you reflect on the quality of your code: 
-https://docs.google.com/forms/d/1Q-NnqVObbGLDHxlvbUfeAC7yBCf3eCjTmz6GOqC9Aeo/edit
+To use this app, clone this repository to your local computer and run the following in the command line:
+
+    bundle install
+
+This should install all of the gems in the gemfile - the app should then be ready to use
+
+## How To Use
+
+### Running Tests
+
+This app uses Rspec as the testing framework, to run the tests, enter inti the command line:
+
+    rspec
+
+### Using App In IRB
+
+The best way to use this app is in a REPL. Whilst developing this I used IRB to run this app:
+
+    irb 
+    > require './lib/account.rb'
+    > require 'hirb'
+    > account = Account.new
+    > account.deposit(10)
+    > account.deposit(30)
+    > account.withdraw(10)
+    > account.balance
+    > 30
+    > account.statement
+    > +---------+--------+----------+-------+
+      | balance | credit | date     | debit |
+      +---------+--------+----------+-------+
+      | 10      | 10     | 07/04/21 |       |
+      | 40      | 30     | 07/04/21 |       |
+      | 30      |        | 07/04/21 | 10    |
+      +---------+--------+----------+-------+
