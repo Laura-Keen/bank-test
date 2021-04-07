@@ -9,5 +9,9 @@ group :test do
 end
 
 group :development, :test do
-  gem 'rubocop'
+  gem 'rubocop', '~> 1.12', '>= 1.12.1'
 end 
+
+group :development do
+  gem 'hirb', '~> 0.7.3'
+end

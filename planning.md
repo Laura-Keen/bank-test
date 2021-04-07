@@ -71,6 +71,16 @@ As a customer
 So that I can keep track of my money  
 I would like to be able to print an account statement  
 
+Use an array of hash and and hirb gem:
+
+statement = [
+  {date: 'date', credit: 'credit', debit: 'debit', balance: 'balance'}
+  {date: 'date', credit: 'credit', debit: 'debit', balance: 'balance'}
+  {date: 'date', credit: 'credit', debit: 'debit', balance: 'balance'}
+]
+
+puts Hirb::Helpers::AutoTable.render(statement)
+
 |Example Output|
 ```
 date || credit || debit || balance
