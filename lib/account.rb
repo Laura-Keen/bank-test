@@ -18,7 +18,7 @@ class Account
   end
 
   def statement
-    puts Hirb::Helpers::Table.render(@statement, fields: [:date, :credit, :deposit, :balance])
+    puts Hirb::Helpers::Table.render(@statement, fields: [:date, :credit, :debit, :balance])
   end
 
 end

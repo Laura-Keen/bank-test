@@ -60,9 +60,9 @@ The best way to use this app is in a REPL. Whilst developing this I used IRB to 
     > 30
     > account.statement
     > +----------+--------+---------+---------+
-      | date     | credit | deposit | balance |
+      | date     | credit | debit | balance |
       +----------+--------+---------+---------+
       | 07/04/21 | 10.00  |         | 10.00   |
       | 07/04/21 | 30.00  |         | 40.00   |
-      | 07/04/21 |        |         | 30.00   |
+      | 07/04/21 |        |  10.00  | 30.00   |
       +----------+--------+---------+---------+
