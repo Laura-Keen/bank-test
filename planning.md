@@ -71,6 +71,8 @@ As a customer
 So that I can keep track of my money  
 I would like to be able to print an account statement  
 
+<img width="764" alt="Screenshot 2021-04-07 at 13 15 09" src="https://user-images.githubusercontent.com/60509804/113864878-55ce9f00-97a3-11eb-8110-7cf47ecaa362.png">
+
 Use an array of hash and and hirb gem:
 
 statement = [
