@@ -2,18 +2,21 @@ require 'account'
 
 describe Account do
 
+  before(:each) do
+    @account = Account.new
+    @account.deposit(10)
+  end
+
   describe '#deposit' do
     it 'Allows the user to make a deposit' do
-      subject.deposit(10)
-      expect(subject.balance).to eq 10.00
+      expect(@account.balance).to eq 10.00
     end
   end
 
   describe '#withdraw' do
     it 'Allows the user to make a withdrawal' do
-      subject.deposit(10)
-      subject.withdraw(5)
-      expect(subject.balance).to eq 5.00
+      @account.withdraw(5)
+      expect(@account.balance).to eq 5.00
     end
   end
   
