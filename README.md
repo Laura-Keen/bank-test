@@ -27,7 +27,7 @@ date || credit || debit || balance
 ```
 ## Planning
 
-If you would like to know more about how I planned this app, please refer to the plannning.md document
+If you would like to know more about how I planned this app and my approach to designing it, please refer to the plannning.md document.
 
 ## Installation
 

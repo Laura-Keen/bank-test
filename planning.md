@@ -1,5 +1,15 @@
 # Planning
 
+## My Approach
+
+  My approach to this app was to come up with the user stories first in order to understand the way that a customer would use the program and what they would use it for.
+  Next, I planned out what classes and methods would be needed for each user story one at a time and wrote the tests and then the code.
+  
+  At first I struggled with getting my head around the third user story as I couldn't figure out the best way to gather all of the information in one place ready to be printed out as one.
+
+## Code Structure 
+  My code is all contained within one account class with one method for each of the three user stories. I think that I could potentially split the class into two and have a separate one for the bank statement but I tried this and found it difficult to pull the information needed from the original account class into the second statement class.
+
 ## User Stories
 
 ### User Story 1:
