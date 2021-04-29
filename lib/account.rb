@@ -1,3 +1,5 @@
+require './lib/statement.rb'
+
 class Account
   
   attr_reader :balance, :statement
@@ -17,8 +19,8 @@ class Account
     @statement << {date: Time.now.strftime("%d/%m/%y"), credit: '', debit: "#{'%.2f' % amount}", balance: "#{'%.2f' % @balance}"}
   end
 
-  def statement
-    puts Hirb::Helpers::Table.render(@statement, fields: [:date, :credit, :debit, :balance])
+  def print_statement
+    Statement.print(@statement)
   end
 
 end
